@@ -1,0 +1,9 @@
+services:
+  react-app:
+    build: .
+    volumes:
+      - .:/app
+    ports:
+      - "3000:3000"
+    command: npm start
+    working_dir: /app

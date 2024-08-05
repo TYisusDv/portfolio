@@ -1,0 +1,45 @@
+@use 'vars' as v;
+@use 'maxins' as m;
+
+body {
+    color: v.$color-body;
+    background: v.$bg-primary;
+}
+
+a {
+    color: v.$color-body;
+}
+
+.navbar {
+    @include m.w-h(100%, 70px);
+    top: 0;
+    right: 0;
+    padding: 10px;
+    box-sizing: border-box;
+
+    .body {
+        @include m.w-h(100%, 100%);
+        display: flex;
+        padding: 0 10px 0 10px;
+        background: v.$bg-secondary;
+        border: 1px solid v.$color-border;
+        border-radius: v.$border-radius;
+        box-sizing: border-box;
+
+        ul {
+            display: flex;
+            align-items: center;
+            list-style: none;
+
+            a {
+                padding: 8px;
+                display: flex;
+                border-radius: 50%;
+
+                &:hover {
+                    background: v.$bg-a-hover;
+                }
+            }
+        }
+    }    
+}
