@@ -25,5 +25,5 @@ body, h1, h2, h3, h4, h5, h6, p, ul, ol, li, figure, figcaption, blockquote, dl,
 ::-webkit-scrollbar-thumb {
     border-radius: v.$border-radius;
     border: 1px solid v.$color-border;
-    background: v.$bg-secondary; 
+    background: v.$color-border; 
 }

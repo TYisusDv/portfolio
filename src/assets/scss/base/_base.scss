@@ -94,6 +94,8 @@ a {
             background: v.$bg-secondary;
             border: 1px solid v.$color-border;
             border-radius: v.$border-radius;
+            gap: 15px;
+            overflow-x: auto;
             
             .header {
                 display: flex;
@@ -127,13 +129,15 @@ a {
                 align-items: center;
     
                 .card-2 {
+                    height: auto;
                     background: v.$bg-card;
                     border-radius: v.$border-radius;
                     border: 1px solid v.$color-border;
-                    padding: 20px;
+                    padding: 20px 20px 20px 20px;
                     width: 100%;
                     max-width: 1200px;                    
                     box-sizing: border-box;
+                    overflow-x: auto;
 
                     p {
                         text-align: justify;
@@ -199,8 +203,8 @@ a {
     .description {
         display: flex;
         flex-direction: column;
+        justify-content: center;
         gap: 10px;
-        padding: 15px 0 15px 0;
 
         .text {
             max-height: 200px;       
