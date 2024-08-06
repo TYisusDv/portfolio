@@ -56,6 +56,7 @@ a {
     right: 0;
     position: fixed;
     padding: 10px;
+    z-index: 99;
     box-sizing: border-box;
 
     .body {
@@ -131,7 +132,7 @@ a {
                     border: 1px solid v.$color-border;
                     padding: 20px;
                     width: 100%;
-                    max-width: 1200px;
+                    max-width: 1200px;                    
                     box-sizing: border-box;
 
                     p {
@@ -200,11 +201,22 @@ a {
         flex-direction: column;
         gap: 10px;
         padding: 15px 0 15px 0;
+
+        .text {
+            max-height: 200px;       
+        }
     }
 
     @media (max-width: 750px) {
         flex-wrap: wrap;
         justify-content: center;
+    }
+}
+
+@media (max-width: 750px) {
+    .overflow-x {
+        overflow-x: auto;
+        padding-right: 8px;        
     }
 }
 

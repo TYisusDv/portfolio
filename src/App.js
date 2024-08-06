@@ -93,7 +93,7 @@ function App() {
                   <div className='description'>
                     <h1>I'm Jesus</h1>
                     <h2>Full Stack developer</h2>
-                    <p className='color-grey'>
+                    <p className='text color-grey overflow-x'>
                       My name is <b>Jesús Navarro Salcido</b>, Computer Systems Engineering student, I am in the <b>9th semester</b> (without starting). I am a <b>Full Stack developer</b> with experience in various <b>technologies</b> and <b>programming languages</b>. My main competencies include: Python, Django, Flask, React, APIs Rest, SQL & NOSQL. I consider myself a versatile professional and always willing to <b>learn new technologies and methodologies</b> to improve my skills and adapt to the needs of the project. I do not limit myself to a single technology, but I continually seek to expand my <b>knowledge</b> to offer the best possible <b>solutions</b>. My approach focuses on <b>problem solving</b>, teamwork and effective <b>communication</b>, ensuring that each project I participate in meets the highest standards of <b>quality and efficiency</b>.
                     </p>
                   </div>
