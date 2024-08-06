@@ -12,3 +12,18 @@ body, h1, h2, h3, h4, h5, h6, p, ul, ol, li, figure, figcaption, blockquote, dl,
     margin: 0;
     padding: 0;
 }
+
+::-webkit-scrollbar {
+    width: 6px;   
+    height: 6px;  
+}
+
+::-webkit-scrollbar-track {
+    background: v.$bg-primary;
+}
+
+::-webkit-scrollbar-thumb {
+    border-radius: v.$border-radius;
+    border: 1px solid v.$color-border;
+    background: v.$bg-secondary; 
+}
