@@ -83,11 +83,11 @@ function App() {
                       <div className='src'></div>
                     </div>
                     <div className='social'>
-                      <a href='mailto:jesusns1902@outlook.com' target='_blank'><Mail01Icon size={26}/></a>
-                      <a href='https://github.com/TYisusDv' target='_blank'><Github01Icon size={26}/></a>
-                      <a href='https://www.linkedin.com/in/tyisusdv/' target='_blank'><Linkedin01Icon size={26}/></a>
-                      <a href='https://www.facebook.com/tyisusdv' target='_blank'><Facebook01Icon size={26}/></a>
-                      <a href='https://wa.me/523481468309' target='_blank'><WhatsappIcon size={26}/></a>
+                      <a href='mailto:jesusns1902@outlook.com' target='_blank' rel="noreferrer"><Mail01Icon size={26}/></a>
+                      <a href='https://github.com/TYisusDv' target='_blank' rel="noreferrer"><Github01Icon size={26}/></a>
+                      <a href='https://www.linkedin.com/in/tyisusdv/' target='_blank' rel="noreferrer"><Linkedin01Icon size={26}/></a>
+                      <a href='https://www.facebook.com/tyisusdv' target='_blank' rel="noreferrer"><Facebook01Icon size={26}/></a>
+                      <a href='https://wa.me/523481468309' target='_blank' rel="noreferrer"><WhatsappIcon size={26}/></a>
                     </div>
                   </div>
                   <div className='description'>
