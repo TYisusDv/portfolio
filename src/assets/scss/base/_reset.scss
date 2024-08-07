@@ -13,6 +13,18 @@ body, h1, h2, h3, h4, h5, h6, p, ul, ol, li, figure, figcaption, blockquote, dl,
     padding: 0;
 }
 
+h1 {
+    font-size: 1.7em;
+}
+
+h2 {
+    font-size: 1.4em;
+}
+
+h3 {
+    font-size: 1em;
+}
+
 ::-webkit-scrollbar {
     width: 8px;   
     height: 8px;  

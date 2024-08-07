@@ -18,6 +18,50 @@ a {
     }
 }
 
+.hover- {
+    &email {
+        &:hover{
+            color: v.$color-email;
+        } 
+    }
+
+    &github {
+        &:hover{
+            color: v.$color-github;
+        } 
+    }
+
+    &linkedin {
+        &:hover{
+            color: v.$color-linkedin;
+        } 
+    }
+
+    &facebook {
+        &:hover{
+            color: v.$color-facebook;
+        } 
+    }   
+    
+    &whatsapp {
+        &:hover{
+            color: v.$color-whatsapp;
+        } 
+    }   
+}
+
+.d-flex {
+    display: flex !important;
+}
+
+.fd-column {
+    flex-direction: column !important;
+}
+
+.fd-row {
+    flex-direction: row !important;
+}
+
 .fs-12px {
     font-size: 12px;
 }
@@ -28,6 +72,22 @@ a {
 
 .mt-20px {
     margin-top: 20px;
+}
+
+.gap-5px {
+    gap: 5px;
+}
+
+.gap-10px {
+    gap: 10px;
+}
+
+.justify-content-center {
+    justify-content: center;
+}
+
+.align-items-center {
+    align-items: center;
 }
 
 .color-primary {
@@ -48,6 +108,15 @@ a {
 
 .color-grey-3 {
     color: v.$color-grey-3;
+}
+
+.text-animated {
+    //font-size: clamp(1em, 2.5vw, 1em);
+    background: linear-gradient(90deg, v.$color-primary, v.$color-secondary, v.$color-primary) 0 0 / 400% 100%;
+    color: transparent;
+    background-clip: text;
+    -webkit-background-clip: text;
+    animation: move-bg 8s infinite linear;
 }
 
 .navbar {
@@ -126,16 +195,24 @@ a {
                 display: flex;
                 flex-direction: column;
                 justify-content: center;
-                align-items: center;
-    
-                .card-2 {
+
+                .skills {
+                    justify-content: center;
+                    flex-wrap: wrap;    
+                    overflow-x: auto;            
+
+                    .card {
+                        flex: 1 1 100% !important;
+                    }
+                }
+                
+                .card, .card-2 {
                     height: auto;
                     background: v.$bg-card;
                     border-radius: v.$border-radius;
                     border: 1px solid v.$color-border;
                     padding: 20px 20px 20px 20px;
                     width: 100%;
-                    max-width: 1200px;                    
                     box-sizing: border-box;
                     overflow-x: auto;
 
@@ -143,6 +220,14 @@ a {
                         text-align: justify;
                         line-height: 22px;
                     }
+                }
+                
+                .card {
+                    width: auto;
+                }
+
+                .card-2 {
+                    max-width: 1200px;
                 }
             }
         }
@@ -204,9 +289,9 @@ a {
         display: flex;
         flex-direction: column;
         justify-content: center;
-        gap: 10px;
 
         .text {
+            margin-top: 10px;
             max-height: 200px;       
         }
     }
@@ -217,7 +302,60 @@ a {
     }
 }
 
+.my-skills {
+   display: flex;
+   gap: 8px;
+   flex-wrap: wrap;
+}
+
+.skill-bar {
+    @include m.w-h(160px, 45px);
+    position: relative;
+    flex: 1 1 30%;
+    display: flex;
+    background: v.$bg-element;
+    border-radius: v.$border-radius;
+
+    .text {
+        @include m.w-h(100%, 100%);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 6px;
+        position: absolute;
+        padding-top: 2px;
+
+        .per {
+            margin-top: 1px;
+            font-size: 15px;
+        }
+    }
+    
+    .bar {
+        @include m.w-h(0, 100%);
+        border-radius: v.$border-radius;
+        transition: width 0.3s ease-in-out;
+        background-image: linear-gradient(
+            45deg,
+            hsla(0, 0%, 100%, 0.15) 25%,
+            transparent 0,
+            transparent 50%,
+            hsla(0, 0%, 100%, 0.15) 0,
+            hsla(0, 0%, 100%, 0.15) 75%,
+            transparent 0,
+            transparent
+        );
+        background-size: 40px 40px;
+        -webkit-animation: move-bg-2 2s linear infinite;
+	    animation: move-bg-2 2s linear infinite;
+    }
+}
+
 @media (max-width: 750px) {
+    .skill-bar {
+        flex: 1 1 100%;
+    }
+    
     .overflow-x {
         overflow-x: auto;
         padding-right: 8px;        
@@ -231,4 +369,20 @@ a {
     0% {
         transform: rotate(360deg);
     }
+}
+
+@keyframes move-bg {
+    to {
+        background-position: 400% 0;
+    }
+}
+
+@keyframes move-bg-2 {
+	0% {
+		background-position: 40px 0;
+	}
+
+	to {
+		background-position: 0 0;
+	}
 }

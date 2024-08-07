@@ -6,6 +6,7 @@ $bg-primary: #161616;
 $bg-secondary: #212121;
 $bg-a-hover: #393939;
 $bg-card: #2c2c2c;
+$bg-element: #373737;
 
 $color-primary: #08AEEA;
 $color-secondary: #00ffb3;
@@ -14,5 +15,12 @@ $color-body: #fff;
 $color-grey: #ececec;
 $color-grey-2: #b1b1b1;
 $color-grey-3: #666666;
+
+//Social
+$color-email: $color-primary;
+$color-github: $color-secondary;
+$color-linkedin: #0077b5;
+$color-facebook: #1877f2;
+$color-whatsapp: #25d366;
 
 $border-radius: 8px;
