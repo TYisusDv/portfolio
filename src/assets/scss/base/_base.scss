@@ -11,6 +11,7 @@ a {
     color: v.$color-body;
     padding: 8px;
     display: flex;
+    transition: background 300ms ease;
     border-radius: 50%;
 
     &:hover, &.active {
@@ -119,6 +120,11 @@ a {
     animation: move-bg 8s infinite linear;
 }
 
+.overflow {
+    overflow: auto;
+    padding-right: 8px;        
+}
+
 .navbar {
     @include m.w-h(100%, v.$navbar-height);
     top: 0;
@@ -164,7 +170,6 @@ a {
             border: 1px solid v.$color-border;
             border-radius: v.$border-radius;
             gap: 15px;
-            overflow-x: auto;
             
             .header {
                 display: flex;
@@ -195,11 +200,12 @@ a {
                 display: flex;
                 flex-direction: column;
                 justify-content: center;
+                overflow: auto;
 
                 .skills {
                     justify-content: center;
-                    flex-wrap: wrap;    
-                    overflow-x: auto;            
+                    flex-wrap: wrap;  
+                    overflow: auto;  
 
                     .card {
                         flex: 1 1 100% !important;
@@ -214,7 +220,6 @@ a {
                     padding: 20px 20px 20px 20px;
                     width: 100%;
                     box-sizing: border-box;
-                    overflow-x: auto;
 
                     p {
                         text-align: justify;
@@ -354,11 +359,6 @@ a {
 @media (max-width: 750px) {
     .skill-bar {
         flex: 1 1 100%;
-    }
-    
-    .overflow-x {
-        overflow-x: auto;
-        padding-right: 8px;        
     }
 }
 
