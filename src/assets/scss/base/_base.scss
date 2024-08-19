@@ -55,6 +55,10 @@ a {
     display: flex !important;
 }
 
+.flex-wrap{
+    flex-wrap: wrap;
+}
+
 .fd-column {
     flex-direction: column !important;
 }
@@ -89,6 +93,10 @@ a {
 
 .align-items-center {
     align-items: center;
+}
+
+.align-items-end {
+    align-items: flex-end;
 }
 
 .color-primary {
@@ -354,6 +362,15 @@ a {
         -webkit-animation: move-bg-2 2s linear infinite;
 	    animation: move-bg-2 2s linear infinite;
     }
+}
+
+.panel {
+    display: flex;
+    width: 100%;
+    background: v.$bg-element;
+    padding: 10px;
+    border-radius: v.$border-radius;
+    box-sizing: border-box;
 }
 
 @media (max-width: 750px) {

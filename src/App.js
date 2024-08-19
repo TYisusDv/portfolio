@@ -1,5 +1,5 @@
 import { Link, Element, scroller } from 'react-scroll';
-import { UserCircle02Icon, Linkedin01Icon, Mail01Icon, Github01Icon, Facebook01Icon, WhatsappIcon, SkullIcon } from "hugeicons-react";
+import { UserCircle02Icon, Linkedin01Icon, Mail01Icon, Github01Icon, Facebook01Icon, WhatsappIcon, SkullIcon, MedalFirstPlaceIcon, ChampionIcon, MedalThirdPlaceIcon } from "hugeicons-react";
 import { useState, useEffect } from 'react';
 import SkillBar from './assets/components/SkillBar';
 
@@ -104,7 +104,7 @@ function App() {
               <span className='info'>Discover my passion for software development.</span>
             </div>
             <div className='body'>
-              <div className='d-flex justify-content-center'>
+              <div className='d-flex gap-10px fd-column align-items-center'>
                 <div className='card-2'>
                   <div className='aboutme'>
                     <div className='contact'>
@@ -126,6 +126,21 @@ function App() {
                         My name is <b>Jesús Navarro Salcido</b>, Computer Systems Engineering student, I am in the <b>9th semester</b> (without starting). I am a <b>Full Stack developer</b> with experience in various <b>technologies</b> and <b>programming languages</b>. My main competencies include: Python, Django, Flask, React, APIs Rest, SQL & NOSQL. I consider myself a versatile professional and always willing to <b>learn new technologies and methodologies</b> to improve my skills and adapt to the needs of the project. I do not limit myself to a single technology, but I continually seek to expand my <b>knowledge</b> to offer the best possible <b>solutions</b>. My approach focuses on <b>problem solving</b>, teamwork and effective <b>communication</b>, ensuring that each project I participate in meets the highest standards of <b>quality and efficiency</b>.
                       </p>
                     </div>
+                  </div>
+                </div>
+                <div className='card-2 d-flex flex-wrap fd-column align-items-center gap-5px'>
+                  <div className='d-flex gap-5px' style={{ marginBottom: '8px' }}>
+                    <ChampionIcon style={{color: "#ebcb8b"}} />
+                    <h2 style={{ paddingTop: '3px'}}> Awards</h2>
+                  </div>
+                  <div className='panel flex-wrap align-items-end gap-5px'>
+                    <MedalThirdPlaceIcon style={{color: "#CD7F32"}} /> <b>Programming contest.</b> 3rd place in the advanced Java programming at the Higher Technological Institute of Arandas in the 8th Semester in Jan 2024.
+                  </div>
+                  <div className='panel flex-wrap align-items-end gap-5px'>
+                    <MedalFirstPlaceIcon style={{color: "#FFD700"}} /> <b>TouchTrack Project.</b> 1st place in science week at the Higher Technological Institute of Arandas in the 7th Semester in Nov 2023.
+                  </div>
+                  <div className='panel flex-wrap align-items-end gap-5px'>
+                    <MedalThirdPlaceIcon style={{color: "#CD7F32"}} /> <b>AgaMarket Project.</b> 3rd place in science week at the Higher Technological Institute of Arandas in the 5th Semester in 2022.
                   </div>
                 </div>     
               </div>         
